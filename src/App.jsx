@@ -13,11 +13,11 @@ export const App = () => {
   const errors = formState.errors
   const form = useRef()
 
-  // console.log(
-  //   import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
-  //   import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
-  //   import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
-  // )
+  console.log(
+    import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
+    import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY
+  )
 
   const sendEmail = () => {
     // e.preventDefault();
@@ -181,3 +181,10 @@ export const App = () => {
 };
 
 export default App;
+
+
+
+// projet initialisé avec react-app, les clefs d'environnements s'écrivent :
+// process.env.REACT_APP_EMAILJS_SERVICE_ID,
+// process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+// process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
